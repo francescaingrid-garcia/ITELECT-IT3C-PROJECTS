@@ -1,0 +1,16 @@
+public class Main {
+  public static void main(String[] args) {
+    int payment1 = 94;
+    int payment2 = 104;
+    int payment3 = 169;
+    int yourMoney = 300; // tamang variable name na para di ako malito
+
+    int total = payment1 + payment2 + payment3; // total = 367
+
+    if (total <= yourMoney) { // pang-check if sapat pa pera ko
+      System.out.println("You have enough money!");
+    } else {
+      System.out.println("You do not have enough money!");
+    }
+  }
+}
