@@ -1,0 +1,40 @@
+package com.example.lifecycle
+
+import android.os.Bundle
+import android.util.Log
+import androidx.activity.ComponentActivity
+
+class MainActivity : ComponentActivity() {
+
+    private val TAG = "MainActivityLifecycle"
+
+    override fun onCreate(savedInstanceState: Bundle) {
+        super.onCreate(savedInstanceState)
+        Log.d(TAG, "onCreate: Activity is being created")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "onStart: Activity is visible to the user")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume: Activity is now interactive (foreground)")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause: Another activity is taking focus, save temporary data")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop: Activity is no longer visible")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy: Activity is about to be destroyed")
+    }
+}
