@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sample_options">
+        <item>Manila</item>
+        <item>Adamstown</item>
+        <item>Warsaw</item>
+        <item>Lisbon</item>
+        <item>San Juan</item>
+    </string-array>
+</resources>
